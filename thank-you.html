@@ -1,30 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thank You – IdealMe</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+--purple:#8b5cf6;
+--deep:#6d28d9;
+--light:#f3e8ff;
+--bg:#faf7ff;
+--text:#2f2f2f;
+--muted:#666;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(135deg,#faf7ff,#ffffff);
+color:var(--text);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:24px;
+}
+
+.card{
+max-width:560px;
+width:100%;
+background:#fff;
+border-radius:24px;
+padding:40px 30px;
+box-shadow:0 25px 70px rgba(0,0,0,0.08);
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.card::before{
+content:"";
+position:absolute;
+top:-70px;
+right:-70px;
+width:200px;
+height:200px;
+background:rgba(139,92,246,0.2);
+border-radius:50%;
+filter:blur(60px);
+}
+
+h1{
+font-family:'Playfair Display',serif;
+color:var(--deep);
+font-size:2.1rem;
+margin-bottom:10px;
+position:relative;
+z-index:1;
+}
+
+.subtitle{
+font-family:'Poppins',sans-serif;
+color:var(--muted);
+margin-bottom:24px;
+line-height:1.6;
+position:relative;
+z-index:1;
+}
+
+.section{
+text-align:left;
+margin-top:22px;
+}
+
+.section-title{
+font-family:'Poppins',sans-serif;
+font-weight:600;
+color:#3b3b3b;
+margin-bottom:10px;
+}
+
+ul{
+list-style:none;
+padding-left:0;
+}
+
+li{
+font-family:'Poppins',sans-serif;
+margin-bottom:10px;
+padding-left:18px;
+position:relative;
+color:var(--muted);
+}
+
+li::before{
+content:"•";
+color:var(--purple);
+position:absolute;
+left:0;
+font-size:1.2rem;
+}
+
+.highlight-box{
+background:var(--light);
+padding:12px 14px;
+border-radius:12px;
+margin-top:10px;
+font-size:0.95rem;
+color:var(--deep);
+font-family:'Poppins',sans-serif;
+}
+
+.contact{
+margin-top:26px;
+padding-top:18px;
+border-top:1px solid #eee;
+font-family:'Poppins',sans-serif;
+font-size:0.95rem;
+color:#555;
+}
+
+.contact strong{
+color:var(--deep);
+}
+
+.back-link{
+display:inline-block;
+margin-top:20px;
+color:var(--purple);
+text-decoration:none;
+font-family:'Poppins',sans-serif;
+transition:0.3s;
+font-weight:500;
+}
+
+.back-link:hover{
+color:var(--deep);
+}
+
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Thank You!</h1>
-        <p>We appreciate your submission. Your response has been recorded successfully.</p>
 
-        <h2>What Happens Next?</h2>
-        <p>Our team will review your input and get back to you shortly. In the meantime, here are some tips to consider:</p>
-        <ul>
-            <li>Check your email for updates.</li>
-            <li>Make sure to follow us on social media for more insights.</li>
-            <li>Feel free to explore our resources while you wait.</li>
-        </ul>
+<div class="card">
 
-        <h2>Contact Information</h2>
-        <p>If you have any questions, please reach out to us at:</p>
-        <p>Email: support@idealme.com</p>
-        <p>Phone: (123) 456-7890</p>
+<h1>You are in 🎉</h1>
 
-        <a href="index.html">Back to Home</a>
-    </div>
+<p class="subtitle">
+Thank you for joining IdealMe. You have taken a simple step toward better clarity and healthier living.
+</p>
+
+<div class="section">
+<p class="section-title">What happens next</p>
+<ul>
+<li>You will receive your free guide shortly</li>
+<li>You can begin with one small step today</li>
+<li>You will start noticing progress over time</li>
+</ul>
+<div class="highlight-box">
+Start small. You do not need to change everything at once.
+</div>
+</div>
+
+<div class="section">
+<p class="section-title">Keep in mind</p>
+<ul>
+<li>Progress matters more than perfection</li>
+<li>Consistency creates real results</li>
+</ul>
+<div class="highlight-box">
+Small habits done daily make the biggest difference.
+</div>
+</div>
+
+<div class="contact">
+<p><strong>Contact</strong></p>
+<p>Email: idaraumoh312@gmail.com</p>
+</div>
+
+<a href="index.html" class="back-link">← Back to Home</a>
+
+</div>
+
 </body>
 </html>
